@@ -23,7 +23,7 @@ public abstract class Pagamento implements Serializable {
 
 	@OneToOne
 	@JoinColumn(name = "pedido_id")
-	@MapsId
+	@MapsId // As duas entidades tem o mesmo primary key
 	private Pedido pedido;
 
 	public Pagamento() {
